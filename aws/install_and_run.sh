@@ -4,8 +4,8 @@ echo "***********************************************************************"
 echo "This script is not intended to be run manually but by AWS user data.   "
 echo "***********************************************************************"
 
-# This script installs Docker, Docker-compose and the required tools to run quickstart on an Azure
-# Ubuntu LTS VM. It then automatically runs the private network and make the explorer available
+# This script installs Docker, Docker-compose and the required tools to run quickstart on an AWS
+# Ubuntu 18.04 LTS VM. It then automatically runs the private network and make the explorer available
 # from the outside on port 80 as well as RPC and WS endpoints.
 
 # Check if user argument is present
