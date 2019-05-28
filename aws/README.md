@@ -8,6 +8,7 @@ This is based upon the [Pantheon Azure tutorial](https://docs.pantheon.pegasys.t
 
 - pick the Ubuntu 18.04 LTS image from the marketplace
 - start it on a `t2.large` instance (2 vCPUS, 8GB RAM)
+  - make sure the size of the main storage is at least 10GB (20GB+ should be safe)
 - [custom install script](./install_and_run.sh) passed as `user data` according to: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html
   - slightly modified from [Azure's original](../azure/install_and_run.sh) to force username to `ubuntu`
 - provide pub key on Launch to be able to `ssh ubuntu@VM-IP`
