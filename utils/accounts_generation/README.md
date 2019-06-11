@@ -7,13 +7,15 @@
 - arg1: `network` can be either `clique` or `ibft2`
 - arg2: number of accounts
 
-Output written to stdout. A common usage would be to redirect the output to the `genesis.json.template` file corresponding to the PoA network you want to start.
+The output is written to stdout.
+A common usage would be to redirect the output to the `genesis.json.template` file corresponding to the PoA network you want to start.
+The file `pantheon_<clique|ibft2>/genesis.json.template` is copied to the Docker image upon construction and processed by the `bootnode` to generate `genesis.json`.
 
 ### Requirements
 
 - `ethkey` CLI from Parity client
 
-### Misc
+### Notes
 
-Accounts filled with default balance 90000000000000000000000 wei.
+Accounts are filled with a default balance of 1 ETH.
 

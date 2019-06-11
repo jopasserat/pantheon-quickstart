@@ -3,6 +3,8 @@
 consensus=$1
 nb_accounts=$2
 
+cd $(dirname $(readlink -f $0))
+
 cat "./${consensus}_header.txt"
 
 i=0
